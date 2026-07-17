@@ -5,124 +5,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-<style>
-    header{
-        font-size: larger;
-        margin: 12px;
-        background-color: aqua;
-    }
-
-    nav{
-        height: 67px;
-        padding: 0px;
-        margin: 0px;
-        background-color: rgb(225, 105, 149);
-        display: flex;
-        border: 2px solid black;
-        border-radius: 23px;
-        
-    }
-    .box1{
-        /* border: 3px solid blue; */
-        height: 62px;
-        width: 76px;
-        text-align: center;
-        cursor: pointer;
-        margin-right: 78px;
-        margin-top: 12px;
-        margin-left: 23px;
-        font-size: 23px;
-    }
-    .box2{
-        /* border: 3px solid blue; */
-        border-radius: 0px;
-        height: 62px;
-        width: 76px;
-        margin-right: 78px;
-        margin-top: 12px;
-        text-align:center;
-         font-size: 23px;
-        cursor: pointer;
-    }
-    .box3{
-        /* border: 3px solid blue; */
-        height: 62px;
-        width: 76px;
-         font-size: 23px;
-         margin-right: 78px;
-          margin-top: 12px;
-        text-align: center;
-        cursor: pointer;
-    }
-    footer{
-        padding: 10px;
-        margin-left: 300px;
-        margin-top: 300px;
-        margin-bottom: 0px;
-        background-color: bisque;
-        height: 39px;
-        width: 56px;
-        border-radius: 23px;
-        cursor: pointer;
-    }
-    body{
-        background-color: aquamarine;
-    }
-    .para{
-        font-size: 34px;
-        color: rgb(107, 10, 28);
-    }
-    input{
-        text-align: center;
-        border-radius: 8px;
-        margin-top: 19px;
-        margin-left: 70px;
-        background-position: 2px;
-        align-items: center;
-    }
-    main{
-        background-color: azure;
-        margin: 12px;
-        padding: 12px;
-    }
-    div:hover{
-        color:rgb(26, 227, 227);
-    }
-    div:visited{
-        color: bisque;
-    }
-</style>
 <body>
+    <style>
+    @media (max-width: 600px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .items {
+        width: 100%;
+    }
+
+    .items ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .imp {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .item {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    main {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+}
+      .logo{
+        width: 100px;
+        
+      }
+      .items ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 245px;
+        gap: 64px;
+        list-style: none;
+      }
+      .items ul li{
+        cursor: pointer;
+      }
+      header{
+        margin: 0px;
+        padding: 0px;
+      }
+      nav{
+        margin: -8px;
+        padding: 0 px;
+        display: flex;
+        background-color: rgb(191, 187, 187);
+      }
+      .imp{
+    margin-left: 71px;
+    padding: 6px;
+      }
+     button{
+     width: 143px;
+    height: 27px;
+    border-radius: 10px;
+     }
+     main{
+    margin: 5px;
+    padding: 45px;
+      height: 67vw;
+      width: 89vw;
+     }
+     .corner img{
+      padding: 0px;
+      margin: 0px;
+height: 45;
+     }
+     body{
+         background-color: rgb(255 237 215);
+    
+     }
+.item{
+    background-color: #F2F0EC;
+    height: 189.5px;
+    width: 366px;
+    margin: 34px;
+    padding: 17px;
+    border-radius: 13px;
+    border: none;
+    text-align: center;
+    
+
+}
+.item button{
+  background-color: yellow;
+  border: none;
+  height: 56px;
+}
+.container{
+    display: grid;
+    height: 915px;
+    width: 1065px;
+    margin: 29px;
+    padding: 67px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+}
+    </style>
+
+<header>
     <nav>
-      <div class="box1">
-       Home
-      </div>
-      <div class="box2">
-       About us
-      </div>
-      <div class="box3">
-     contact us
-      </div>
-
-      <div class="input">
-        <input type="text" name="name" placeholder="login">
-      </div>
-      <div class="input2">
-        <input type="text" name="name" placeholder="register">
-      </div>
+       
+        <div class="logo">
+            <img src="UE-logo.svg" alt="nothing">
+        </div>
+        <div class="items">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Pricing</li>
+                <li>Help</li>
+                <li class="imp"><button class ="input">search</button></li>
+            </ul>
+          
+        </div>
     </nav>
-
+</header>
 <main>
-<p class ="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aut qui dolorem adipisci eum incidunt illo aperiam. Recusandae minima dolores praesentium voluptate vero, soluta perferendis, quos esse, ab provident aspernatur dicta aperiam cumque qui! Ipsam, quidem adipisci magnam ullam nobis dolor in nam voluptate cum.
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus at a sit culpa labore, temporibus neque saepe voluptatibus officiis modi accusantium repellendus autem mollitia rerum quod inventore consectetur asperiores minima voluptates similique excepturi. Et quas reprehenderit laudantium commodi soluta nostrum maiores explicabo impedit aliquid deleniti.
-</p>
+  <div class="container">
+  <div class="item">
+    <h1>English</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+
+  </div>
+  <div class="item">
+<h1>English</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+  </div>
+  <div class="item">
+<h1>Hindi</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+  </div>
+  <div class="item">
+<h1>Marathi</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+  </div>
+  <div class="item">
+<h1>French</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+  </div>
+  <div class="item">
+<h1>Spanish</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+  </div>
+  <div class="item">
+<h1>Telgu</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+  </div>
+  <div class="item">
+<h1>Mathili</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+  </div>
+  <div class="item">
+<h1>Bhojpuri</h1>
+    <h2>Includes all languages</h2>
+    <h4><button><a href="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp">Download-64-bit</a></button></h4>
+  </div>
+  </div>
 </main>
 
-
-<footer>
-    @Thank you@ 
-</footer>
 
 </body>
 </html>
